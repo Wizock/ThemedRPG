@@ -40,45 +40,45 @@ def buttonReact(highlight, res):
             if highlight[i]:
                 transformSprite(res[i],0,0.909090909090909)
     return highlight, res
-if __name__ == "__main__":
-    while run:
-        moveSprite(curs, mouseX(),mouseY())
-        if spriteClicked(res1) and not highlight[0]:
-            (highlight, res) = buttonReact(highlight, res)
-            highlight[0] = True
-            highlight[1] = False
-            highlight[2] = False
 
-        if spriteClicked(res2) and not highlight[1]:
-            (highlight, res) = buttonReact(highlight, res)
-            highlight[0] = False
-            highlight[1] = True
-            highlight[2] = False
+while run:
+    moveSprite(curs, mouseX(),mouseY())
+    if spriteClicked(res1) and not highlight[0]:
+        (highlight, res) = buttonReact(highlight, res)
+        highlight[0] = True
+        highlight[1] = False
+        highlight[2] = False
 
-        if spriteClicked(res3) and not highlight[2]:
-            (highlight, res) = buttonReact(highlight, res)
-            highlight[0] = False
-            highlight[1] = False
-            highlight[2] = True
+    if spriteClicked(res2) and not highlight[1]:
+        (highlight, res) = buttonReact(highlight, res)
+        highlight[0] = False
+        highlight[1] = True
+        highlight[2] = False
 
-        if spriteClicked(cont):
-            for i in range(len(res)):
-                if highlight[i]:
-                    resolution = resolutionSett[i]
-                    done = True
-                    break
-            if done:
+    if spriteClicked(res3) and not highlight[2]:
+        (highlight, res) = buttonReact(highlight, res)
+        highlight[0] = False
+        highlight[1] = False
+        highlight[2] = True
+
+    if spriteClicked(cont):
+        for i in range(len(res)):
+            if highlight[i]:
+                resolution = resolutionSett[i]
+                done = True
+                break
+        if done:
+            break
+
+    if mousePressed():
+        for i in range(len(highlight)):
+            if highlight[i]:
+                transformSprite(res[i], 0, 1.1)
+                showSprite(cont)
+                showLabel(contLabel)
                 break
 
-        if mousePressed():
-            for i in range(len(highlight)):
-                if highlight[i]:
-                    transformSprite(res[i], 0, 1.1)
-                    showSprite(cont)
-                    showLabel(contLabel)
-                    break
-
-        if keyPressed('esc'):
-            run = False
+    if keyPressed('esc'):
+        run = False
 
 endWait()
