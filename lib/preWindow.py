@@ -26,10 +26,19 @@ while run:
     if spriteClicked(res3) and not highlight[2]:(highlight, res) = buttonReact(highlight, res);highlight[0] = False;highlight[1] = False;highlight[2] = True
     if spriteClicked(cont):
         for i in range(len(res)):
-            if highlight[i]:resolution = resolutionSett[i];done = True
+            if highlight[i]:
+                resolution = resolutionSett[i]
+                done = True
                 break
-        if done:break
-    if mousePressed():for i in range(len(highlight)):if highlight[i]:transformSprite(res[i], 0, 1.1);showSprite(cont);showLabel(contLabel)
+        if done:
+            break
+    if mousePressed():
+        for i in range(len(highlight)):
+            if highlight[i]:
+                transformSprite(res[i], 0, 1.1);
+                showSprite(cont);
+                showLabel(contLabel)
+                print(f"you have chosen{resolutionSett[i]}")
                 break
     if keyPressed('esc'):run = False
 endWait()
