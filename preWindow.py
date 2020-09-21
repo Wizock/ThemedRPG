@@ -82,5 +82,6 @@ while run:
         run = False
         print("we just ran hehe")
         k = 1
+        k + 1
 
 endWait()
