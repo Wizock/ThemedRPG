@@ -1,9 +1,10 @@
 from inventory import *
 from preWindow import *
-pre = preWindoww()
-pre.preWinRun()
-k = list(pre.resolution)
-screenSize(k[0],k[1],k[0]/2,k[1]/2)
+from level1 import *
+
+#level = levelOne()
+
+mainWindow()
 
 while True:
     if keyPressed("space"):

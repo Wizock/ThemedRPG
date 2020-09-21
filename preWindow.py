@@ -33,6 +33,7 @@ class preWindoww:
         for i in range(len(self.highlight)):
                 if self.highlight[i]:
                     transformSprite(self.res[i],0,0.909090909090909)
+                    
         return self.highlight, self.res
 
     def preWinRun(self):
