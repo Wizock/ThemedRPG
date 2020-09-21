@@ -1,1 +1,1 @@
-from res_init import preWindow
+from lib.preWindow import *
