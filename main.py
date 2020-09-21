@@ -22,12 +22,11 @@ else:
     os.chdir(os.path.abspath(os.getcwd()))
 print(os.getcwd())
 
-os.path.join(1, str(rf"lib\\pygame_\\"))
-
 if path.exists(str(workingDirectory)):
     print("works")
 else:
     print("doesnt work")
 
-from lib.preWindow import *
-from lib.main_window import *
+import lib.preWindow  
+import lib.main_window 
+import lib.pygame_.pygame_functions
