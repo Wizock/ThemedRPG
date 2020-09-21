@@ -1,4 +1,4 @@
-from pygame_.pygame_functions import *
+from lib.pygame_.pygame_functions import *
 #initiation of the game window
 screenSize(600,450);setBackgroundColour((43,43,43))
 #initiation of sprites

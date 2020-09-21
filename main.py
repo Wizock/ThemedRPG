@@ -27,6 +27,6 @@ if path.exists(str(workingDirectory)):
 else:
     print("doesnt work")
 
-import lib.preWindow  
-import lib.main_window 
-import lib.pygame_.pygame_functions
+from lib import preWindow 
+from lib import main_window
+from lib.pygame_ import pygame_functions
