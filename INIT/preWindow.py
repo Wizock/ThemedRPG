@@ -1,5 +1,4 @@
 from pygame_functions import *
-
 #initiation of the game window
 screenSize(600,450)
 setBackgroundColour((43,43,43))
@@ -80,8 +79,5 @@ while run:
 
     if keyPressed('esc'):
         run = False
-        print("we just ran hehe")
-        k = 1
-        k + 1
 
 endWait()

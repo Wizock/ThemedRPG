@@ -1,9 +1,3 @@
-# pygame_functions
-
-# Documentation at www.github.com/stevepaget/pygame_functions
-# Report bugs at https://github.com/StevePaget/Pygame_Functions/issues
-
-
 import pygame, math, sys, os
 
 pygame.mixer.pre_init(44100, -16, 2, 512)
