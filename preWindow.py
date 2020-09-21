@@ -80,5 +80,6 @@ while run:
 
     if keyPressed('esc'):
         run = False
+        print("we just ran hehe")
 
 endWait()
