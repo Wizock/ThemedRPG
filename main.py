@@ -1,1 +1,1 @@
-from INIT import preWindow
+from res_init import preWindow
