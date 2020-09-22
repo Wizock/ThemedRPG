@@ -1,8 +1,15 @@
 from preWindow import *
+from mainWindow import *
 
-def mainWindow():
-    pre = preWindoww()
-    pre.preWinRun()
-    k = list(pre.resolution)
-    screenSize(k[0],k[1],k[0]/2,k[1]/2)
+class lvlOne:
+    mainWindow()
+    def __init__(self):
+
+        self.hero = makeSprite("sprites/hero/straight.png")
+    def DisplayLvl(self):
+        hideAll()
+        hideLabel(pre.msg)
+        hideLabel(pre.contLabel)
+        showSprite(self.hero)
+
     
