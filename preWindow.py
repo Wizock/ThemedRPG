@@ -33,8 +33,8 @@ class preWindoww:
         for i in range(len(self.highlight)):
                 if self.highlight[i]:
                     transformSprite(self.res[i],0,0.909090909090909)
-                    
         return self.highlight, self.res
+                    
 
     def preWinRun(self):
         while self.run:
@@ -51,8 +51,8 @@ class preWindoww:
                 self.highlight[2] = False
             if spriteClicked(self.res3) and not self.highlight[2]:
                 (self.highlight, self.res) = self.buttonReact(self.highlight, self.res)
-                self.highlight[0] = False;
-                self.highlight[1] = False;
+                self.highlight[0] = False
+                self.highlight[1] = False
                 self.highlight[2] = True
             if spriteClicked(self.cont):
                 for i in range(len(self.res)):

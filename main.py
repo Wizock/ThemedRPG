@@ -1,11 +1,9 @@
-from inventory import *
-from preWindow import *
-from level1 import *
-from mainWindow import *
+from initalise import *
 
-level = lvlOne()
-level.DisplayLvl()
 
 while True:
+    if keyPressed("w"):
+        moveSprite(level.hero,)
     if keyPressed("space"):
         end()
+
