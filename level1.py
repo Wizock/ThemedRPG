@@ -11,7 +11,8 @@ class lvlOne:
         hideLabel(pre.contLabel)
         self.a = list((1920,1080))
         self.b = list(pre.resolution)
-        transformSprite(self.hero,(self.b[0]/self.a[0])+(self.b[1]/self.a[1]),0)
+        transformSprite(self.hero,0,int(384+(self.b[0]/self.a[0])+(self.b[1]/self.a[1])),0)
+        transformSprite()
         showSprite(self.hero)
 
     
