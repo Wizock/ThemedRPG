@@ -7,4 +7,3 @@ while True:
     if keyPressed("space"):
         end()
 
-"""fuck this shit bron janjf"""
