@@ -1,4 +1,4 @@
-from preWindow import *
+from wizockPreWindow import *
 from pygame_functions import *
 pre = preWindoww()
 
@@ -10,6 +10,7 @@ def mainWindow():
 
 class hero:
     def __init__(self):
+        #this is unnecessarily long, cant you shorten the path to sprites\hero\straight.png, this will allow the game to work on any device, not just your home/school pc
         self.hero = makeSprite("H:\python\Themed RPG\ThemedRPG\sprites\hero\straght.png")
         self.hero_x = 50
         self.hero_y = 50
