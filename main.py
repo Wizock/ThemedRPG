@@ -1,9 +1,4 @@
-from initalise import *
+from preWindow import resolutionX, resolutionY
 
-
-while True:
-    if keyPressed("w"):
-        moveSprite(level.hero,1, 1)
-    if keyPressed("space"):
-        end()
+print(f"{resolutionX} {resolutionY}")
 

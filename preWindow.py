@@ -4,6 +4,7 @@ from pygame_functions import *
 screenSize(600,450)
 setBackgroundColour((43,43,43))
 
+
 #initiation of sprites
 res1 = makeSprite("images/1280720.png")
 res2 = makeSprite("images/1366768.png")
